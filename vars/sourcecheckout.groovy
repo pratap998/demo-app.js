@@ -16,14 +16,6 @@ error("please provide valid github url")
 }
 }
 parameters:
-- name: dockerfiles
+- name: dockerfile
     type: string
     displayName: Specify the path to the Dockerfile(s) as semicolon delimited string e.g. demo-app.js/Dockerfile (optional)
-    
-  - name: build_arguments
-    type: string
-    displayName: Specify the container build arguments as semicolon delimited string e.g. VAR1=FOO;VAR2=BAR (optional)
-
-  - name: docker_tag
-    type: string
-    displayName: Specify the container tagname e.g. pratap524/demo-app (mandatory)
